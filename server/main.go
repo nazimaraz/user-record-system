@@ -103,7 +103,6 @@ func (s *server) Save(ctx context.Context, r *pb.User) (*pb.SaveResponse, error)
 }
 
 func main() {
-	fmt.Println("tests")
 	flag.Parse()
 	lis, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", *port))
 	if err != nil {
